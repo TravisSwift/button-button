@@ -7,3 +7,8 @@ body {
     background-color: hsl(0, 0%, 0%);
     color: hsl(0, 0%, 100%);
 }
+
+button {
+    height: 4em;
+    width: 8em;
+}

@@ -14,19 +14,42 @@
     <title>Button Button</title>
 </head>
 <body>
-
+        <!-- An onclick even button that prints text-->
     <section>
         <h1>An onclick event button. </h1>
         <button onclick="printText()">Click Me!</button>  <button onclick="clearText()">Clear Text</button>
         <p id="Button1"></p>       
-        <p id="Button2"></p>
-    </section>
+       </section>
 
+        <!-- A toggle event button that switched between light and dark mode -->
     <section>
-        <h1>A Toggle Event Button</h1>
+        <h1>A button with a toggle effect, dark and light mode.</h1>
         <button onclick="changeMode()">Click Me</button>
     </section>
     
-</body>
-<script src="/assets/js/script.js"></script>
+    <!-- A onmouseover and onmouseleave event that changes the buttons color on hover -->
+    <section>
+        <h1>A Button with a color changing hover effect</h1>
+    <button onmouseover="turnRed(this)" onmouseleave="revertColor(this)">Hover Over Me!
+
+    </button>
+    </section>
+    <br></br>
+
+    <h1>A button to demonstate input using an event listener.</h1> 
+    <section>
+        <button id="submitButton" disabled>Submit</button>
+        <input type="text" id="colorInput" placeholder="Favorite color">
+        <p id="input"></p>
+    </section>
+
+    <H1>A Button to display date and time. Practicing the logic of an onclick event</H1>
+    <section>
+        <button onclick="printDate()">Date and Time</button>
+        <button onclick="clearDate()">Clear Date</button>
+        <p id="dateButton"></p>
+    </section>
+
+    <script src="/assets/js/script.js"></script>
+</body> 
 </html>
