@@ -43,7 +43,19 @@ function changeColor() {
 }
 
 function revertColor() {
-    document.getElementById("messageButton").style.color = "black";
+    document.getElementById("messageButton").style.color = "";
+}
+
+let count = 0; // start count at 0 //
+function increaseCount() {
+     count++; //increase count by 1
+     document.getElementById("countDisplay").innerHTML = "Current Count: " + count; 
+}
+
+function decreaseCount() {
+    count--; //decrease count by 1
+    document.getElementById("countDisplay").innerHTML = "Current Count: " + count;
+
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {
@@ -72,8 +84,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 
-        // set up button that shakes onclick
-
+ 
 });
     
  

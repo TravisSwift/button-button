@@ -12,3 +12,12 @@ button {
     height: 4em;
     width: 8em;
 }
+
+.textBox {
+    min-width: 200px;
+    min-height: 20px;
+    max-height: 75px;
+    max-width: 450px;
+    border: solid;
+    color: rgb(3, 2, 0);
+}
