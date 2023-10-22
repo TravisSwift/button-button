@@ -38,6 +38,14 @@ function clearDate() {
     document.getElementById("dateButton").innerHTML = "";
 }
 
+function changeColor() {
+    document.getElementById("messageButton").style.color = "blue";
+}
+
+function revertColor() {
+    document.getElementById("messageButton").style.color = "black";
+}
+
 window.addEventListener('DOMContentLoaded', (event) => {
     
     // Get button and input field
@@ -63,6 +71,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
             document.getElementById('input').innerHTML = "Please enter a valid color name";
         }
     });
+
+        // set up button that shakes onclick
+
 });
     
  
