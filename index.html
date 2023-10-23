@@ -16,7 +16,7 @@
 <body>
         <!-- An onclick even button that prints text-->
     <section>
-        <h1>An onclick event button. </h1>
+        <h1>"Click this button to display a heartfelt message. Click again to clear it!"</h1>
         <button onclick="printText()">Click Me!</button>  <button onclick="clearText()">Clear Text</button>
         <p id="Button1"></p>       
        </section>
@@ -31,9 +31,9 @@
     <section>
         <h1>A Button with a color changing hover effect</h1>
     <button onmouseover="turnRed(this)" onmouseleave="revertColor(this)">Hover Over Me!
-
     </button>
     </section>
+
     <br></br>
         <!-- a submit button with a disabled state -->
     <h1>A button to demonstate input using an event listener.</h1> 
@@ -51,14 +51,24 @@
         <p id="dateButton" class="textBox" ></p>
     </section>
 
+    <!-- A button that changes the color of text -->
     <section>
         <button onclick="changeColor()">Toggle color</button> <button onclick="revertColor()">Revert color  </button>      
         <p id="messageButton">Make me blue!</p>
     </section>
 
+    <!-- A buttons that increase decrease by one digit-->
     <section>
         <button onclick="increaseCount()">Plus Count</button> <button onclick="decreaseCount()">Minus Count</button>
         <p id="countDisplay">Current Count: 0</p>
+    </section>
+
+    <!-- a collapsable button -->
+    <section>
+        <button type="button" class="collapsible">Open Collapsible</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat massa eget consequat mollis. Suspendisse potenti. Etiam tincidunt, arcu eu pharetra vulputate, magna augue tempor lorem, non pellentesque justo neque id ante. Ut nulla quam, aliquet non volutpat in, tincidunt eget elit. Donec sed luctus dolor, non venenatis odio. In semper mollis justo sit amet mattis. In quis eros tellus. Fusce sagittis aliquam tellus. Donec ultrices eros felis, dictum aliquam odio ultricies eget. Integer et odio dapibus, mattis metus in, bibendum eros. Fusce sit amet nisl vel nunc convallis ornare ultricies non ipsum.</p>
+</div>
     </section>
 
     <script src="/assets/js/script.js"></script>

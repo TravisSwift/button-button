@@ -1,5 +1,5 @@
 
-/* An on-click event */
+/* An on-click event to print a string*/
 function printText() {
     document.getElementById("Button1").innerHTML = "You clicked me, I love you!";
 }
@@ -19,11 +19,11 @@ function changeMode() {
 
 /* Hover effect buttons */
 function turnRed(element) {
-    console.log("pointer hovered")
+    console.log("Pointer hovered")
     element.style.backgroundColor = 'red';
 }
-
 function revertColor(element) {
+    console.log("Pointer unhovered")
     element.style.backgroundColor = '';
 }
 
@@ -33,19 +33,20 @@ function printDate() {
     var currentDate = new Date();
     document.getElementById("dateButton").innerHTML = currentDate.toString();
 }
-
 function clearDate() {
     document.getElementById("dateButton").innerHTML = "";
 }
 
+
+    //Function to change the displayed text color
 function changeColor() {
     document.getElementById("messageButton").style.color = "blue";
 }
-
 function revertColor() {
     document.getElementById("messageButton").style.color = "";
 }
 
+        // Count function starting at 0
 let count = 0; // start count at 0 //
 function increaseCount() {
      count++; //increase count by 1
@@ -84,6 +85,20 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
  
 });
     
